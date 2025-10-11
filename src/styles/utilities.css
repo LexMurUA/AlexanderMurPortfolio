@@ -2,13 +2,17 @@
 
 
 @utility container {
-  @apply w-full border border-black p-4;
+  @apply w-full p-4;
 }
 
 @utility link-nav {
   @apply text-lg font-medium text-blue-600 hover:text-yellow-300 font-bold sm:text-xs;
 }
 
-@utility text-adapt {
-  @apply text-[clamp(14px, 2vw, 22px)];
+
+
+@layer utilities {
+  .text-adapt {
+    font-size: clamp(14px, 2vw, 22px);
+  }
 }
