@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 
-@utility container {
-  @apply w-full p-4;
+@utility my-container {
+  @apply w-full ;
 }
 
 @utility link-nav {
@@ -15,4 +15,27 @@
   .text-adapt {
     font-size: clamp(14px, 2vw, 22px);
   }
+
+  .text-title {
+    font-weight: bold;
+    font-size: clamp(20px, 3.5vw, 30px);
+  }
+
+  .adapt-touch {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .adapt-touch:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .adapt-touch:active {
+      transform: scale(1.008);
+      opacity: 0.5;
+    }
+  }
 }
+
