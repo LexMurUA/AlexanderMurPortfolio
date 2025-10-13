@@ -26,11 +26,11 @@ export const Header = () => {
 
                 </div>
                 <nav className={` bg-neutral-50 flex w-full justify-evenly  
-                absolute  lg:static top-[100%] ${openMenu ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+                absolute  lg:static top-[100%]  
                  transition-all duration-300  font-medium text-blue-400 text-adapt 
                   lg:w-[45%] lg:items-center `} >
                     <a href="" className='text-adapt'>Home</a>
-                    <a href="" className='text-adapt'>About</a>
+                    <a href="#about" className='text-adapt'>About</a>
                     <a href="" className='text-adapt'>Projects</a>
                     <a href="" className='text-adapt'>Contacts</a>
                 </nav>

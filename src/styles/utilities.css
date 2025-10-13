@@ -8,6 +8,9 @@
 @utility link-nav {
   @apply text-lg font-medium text-blue-600 hover:text-yellow-300 font-bold sm:text-xs;
 }
+@utility my-btn {
+  @apply mt-2  border py-2 px-4 bg-neutral-50 rounded-[5px];
+}
 
 
 
@@ -24,6 +27,7 @@
   .adapt-touch {
     transition: transform 0.2s ease-in-out;
   }
+  
 
   @media (hover: hover) and (pointer: fine) {
     .adapt-touch:hover {
