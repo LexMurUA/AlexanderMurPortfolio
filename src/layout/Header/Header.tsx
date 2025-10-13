@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import burger from '../../assets/burger.svg';
 import me from '../../assets/me.png';
 import burgeropen from '../../assets/openburg.gif';
@@ -9,10 +9,12 @@ export const Header = () => {
     const toggle = () => {
         setOpenMenu(prev => !prev)
     }
+
+
     return (
         <>
             <div className='h-[33vh] h-[112px] '></div>
-            <header className='my-container  fixed justify-center lg:justify-between   bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0'>
+            <header className='my-container  fixed justify-center lg:justify-between bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0'>
 
                 <div className='flex ' >
                     <div className='w-1/2 m-2  flex items-center p-2 gap-2 '>
@@ -26,9 +28,9 @@ export const Header = () => {
 
                 </div>
                 <nav className={` bg-neutral-50 flex w-full justify-evenly  
-                absolute  lg:static top-[100%]  
+                absolute  lg:static top-[100%] left-0  ${openMenu ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
                  transition-all duration-300  font-medium text-blue-400 text-adapt 
-                  lg:w-[45%] lg:items-center `} >
+                  lg:w-[45%] lg:items-center lg:opacity-100 lg:translate-x-0`} >
                     <a href="" className='text-adapt'>Home</a>
                     <a href="#about" className='text-adapt'>About</a>
                     <a href="" className='text-adapt'>Projects</a>

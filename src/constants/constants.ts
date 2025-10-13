@@ -1,2 +1,3 @@
 export const linkedIn = 'https://www.linkedin.com/in/lexmurakhinfrontend?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';
 export const gitHub = 'https://github.com/LexMurUA'
+export const movieFinderLink = 'https://lexmurua.github.io/Movie-finder/'

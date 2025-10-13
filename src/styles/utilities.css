@@ -27,7 +27,10 @@
   .adapt-touch {
     transition: transform 0.2s ease-in-out;
   }
-  
+    .active-nav {
+      opacity: 1;
+      left: 0;
+    }
 
   @media (hover: hover) and (pointer: fine) {
     .adapt-touch:hover {

@@ -1,12 +1,17 @@
-import './Main.css';
+import MovieFinder from '../../assets/MovieFinder.png';
+import backWall from '../../assets/backwall.jpg';
+import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
+import { movieFinderLink } from '../../constants/constants';
+import './Main.css';
 export const Main = () => {
+
 
     return (
         <main className='my-container  xl: w-[100%] '>
             <section id='greetings' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'
             >
-                <div className='p-4  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
+                <div className='p-8  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
                     <span>👋</span>
                     <h1 className='text-title text-neutral-50'>HEY, MY NAME IS <br />
                         ALEXANDER MURAKHIN
@@ -22,9 +27,9 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id='about' className='flex flex-col border-2 border-amber-300'>
+            <section id='about' className={`flex flex-col border-2 p-8 border-amber-300 `}>
 
-                <div className='flex flex-col items-center gap-3 lg:gap-8 px-4 py-8'>
+                <div className='flex flex-col items-center gap-3   lg:gap-8 px-4 py-8 '>
 
                     <div className='text-center '>
                         <h2 className='text-title'>About Me</h2>
@@ -73,14 +78,39 @@ export const Main = () => {
 
                         </div>
                     </div>
-                        <p className="text-adapt mt-4">Several years on maternity leave became one of the most powerful motivation for my professional self-realization. So, I am always up to the job and learning Front End Development root and branch. Feel free to contact me 😊</p>
-                        <button className='adapt-touch text-adapt my-btn self-center mt-4'>Contact</button>
+                    <p className="text-adapt mt-4">Several years on maternity leave became one of the most powerful motivation for my professional self-realization. So, I am always up to the job and learning Front End Development root and branch. Feel free to contact me 😊</p>
+                    <button className='adapt-touch text-adapt my-btn self-center mt-4'>Contact</button>
 
 
                 </div>
             </section>
 
+            <section style={{ backgroundImage: `url(${backWall})` }} className='my-container  bg-center bg-no-repeat bg-contain'>
+                <div>
+                    <h3>PROJECTS</h3>
+                    <Project image={MovieFinder} link={movieFinderLink}
+                        name={'Movie-Finder TypeScript Project'}
+                        techkList={['JavaScript', 'TypeScript',
+                            'React', 'RTK-QUERY', 'REST API', 'SCSS', 'Framer Motion']} />
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Contact Details</h3>
+                    <span>Feel free to contact me</span>
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <a href="">sdds</a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </section>
 
         </main>
+
+
     )
 }
