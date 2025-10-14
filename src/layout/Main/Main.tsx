@@ -86,8 +86,8 @@ export const Main = () => {
                     <div className='flex flex-col w-full gap-4'>
                         <h3 className='text-title text-left lg:text-center mt-10  mb-10'><b>Diplomas</b></h3>
                         <div className='flex flex-col w-full md:flex-row gap-4 lg:w-[50%] lg:justify-evenly  lg:w-[100%]'>
-                            <a href={diplomaReact} target='blank' className=' h-full adapt-touch'><img src={rs} alt="React Diploma" className=' object-contain    ' /></a>
-                            <a href={diplomaPython} target='blank' className=' h-full adapt-touch'><img src={ps} alt="Python Diploma " className='object-contain    ' /></a>
+                            <a href={diplomaReact} target='blank' className=' h-full adapt-touch lg:w-[45%] '><img src={rs} alt="React Diploma" className=' object-contain    ' /></a>
+                            <a href={diplomaPython} target='blank' className=' h-full adapt-touch lg:w-[45%]'><img src={ps} alt="Python Diploma " className='object-contain    ' /></a>
                         </div>
                     </div>
 
