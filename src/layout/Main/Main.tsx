@@ -2,9 +2,11 @@ import MovieFinder from '../../assets/MovieFinder.png';
 import aP from '../../assets/ap.png';
 import tDl from '../../assets/tDl.png';
 import gW from '../../assets/GW.png';
+import rs from '../../assets/RS.png';
+import ps from '../../assets/PS.png';
 import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
-import { adminPanel, adminPanelCode, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, telegram, toDoList, toDoListCode } from '../../constants/constants';
+import { adminPanel, adminPanelCode, diplomaPython, diplomaReact, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, telegram, toDoList, toDoListCode } from '../../constants/constants';
 import { movieFinderLinkCode } from '../../constants/constants';
 import './Main.css';
 import backWall from '../../assets/backwall.jpg';
@@ -12,9 +14,10 @@ import backWall from '../../assets/backwall.jpg';
 export const Main = () => {
 
 
+
     return (
         <main className='my-container  xl: w-[100%] '>
-            <section id='greetings' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'>
+            <section id='about' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover '>
                 <div className='p-8  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
                     <span>👋</span>
                     <h1 className='text-title text-neutral-50'>HEY, MY NAME IS <br />
@@ -31,9 +34,9 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id='about' className='flex flex-col p-8'>
+            <section className='flex flex-col p-8'>
 
-                <div className='flex flex-col items-center gap-3   lg:gap-8 px-4 py-8 '>
+                <div className='flex flex-col items-center gap-3   lg:gap-13 px-4 py-8 '>
 
                     <div className='text-center '>
                         <h2 className='text-title'>About Me</h2>
@@ -45,16 +48,13 @@ export const Main = () => {
                         <div className='w-full lg:w-1/2'>
                             <h3 className='text-adapt'><b>Get to know me!</b></h3>
                             <p className="text-adapt mt-4">
-                                Hey! It's
-                                <strong>Yuliia Zavistovska</strong>
-                                and I'm a <strong> Junior Frontend Web Developer (React.js) </strong> located in
-                                Kyiv, Ukraine. Having worked as IT Customer
-                                Manager, as well as having completed Front-End courses successfully, I am particularly interested in a
-                                Junior Front End (React) position.
-                                My background has required me to be a strong <strong>
-                                    manager of Customer Service and Conflict Resolution Department </strong> what, I am confident, will be
-                                an important quality to join a company with growth potential to collaborate with talented people
-                                creating <strong> digital products </strong> for both business and consumer use.
+                                Hey! I'm <strong>Alexander Murakhin</strong> — a <strong>Junior Frontend Web Developer (React.js)</strong> based in Kyiv, Ukraine.
+
+                                With experience as a manager and technical support assistant for WordPress websites, as well as successful completion of Python and Front-End courses, I’m passionate about building modern, user-friendly web interfaces.
+
+                                My background has taught me to be <strong>an inventive and adaptable team player with strong communication and problem-solving skills</strong>.
+
+                                I’m now seeking a <strong>Junior Frontend (React)</strong> position where I can grow, collaborate with talented professionals, and create <strong>meaningful digital products</strong> for businesses and consumers alike.
 
                             </p>
                         </div>
@@ -82,8 +82,16 @@ export const Main = () => {
 
                         </div>
                     </div>
-                    <p className="text-adapt mt-4">Several years on maternity leave became one of the most powerful motivation for my professional self-realization. So, I am always up to the job and learning Front End Development root and branch. Feel free to contact me 😊</p>
-                    <button className='adapt-touch text-adapt my-btn self-center mt-4'>Contact</button>
+                    <p className="text-adapt mt-4">More than a year of learning under the mentorship of experienced professionals — with detailed code reviews and daily practice — has only strengthened my passion for creating and understanding code in depth. That’s why I’m always full of enthusiasm and eager to take on new challenges in Front-End Development.</p>
+                    <div className='flex flex-col w-full gap-4'>
+                        <h3 className='text-title text-left lg:text-center mt-10  mb-10'><b>Diplomas</b></h3>
+                        <div className='flex flex-col w-full md:flex-row gap-4 lg:w-[50%] lg:justify-evenly  lg:w-[100%]'>
+                            <a href={diplomaReact} target='blank' className=' h-full adapt-touch'><img src={rs} alt="React Diploma" className=' object-contain    ' /></a>
+                            <a href={diplomaPython} target='blank' className=' h-full adapt-touch'><img src={ps} alt="Python Diploma " className='object-contain    ' /></a>
+                        </div>
+                    </div>
+
+                    <button className='adapt-touch text-adapt my-btn self-center mt-4 uppercase bg-blue-400'>Contacts</button>
 
 
                 </div>
@@ -109,12 +117,12 @@ export const Main = () => {
 
             <section id='contacts' className='bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'>
                 <div className='p-8 flex flex-col items-center gap-8'>
-                    <h3 className='text-title text-center'>Contact Details</h3>
+                    <h3 className='text-title text-center'>Contacts details</h3>
                     <span className='text-adapt'><i>Feel free to contact me</i></span>
                     <div style={{ backgroundImage: `url(${backWall})` }}
                         className="w-full md:w-[75%] lg:w-1/2 bg-center bg-cover bg-no-repeat  flex flex-row flex-wrap justify-center text-center  ">
-                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold '>+38(063)611-19-54</span>
-                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold'>lex16mur@gmail.com</span>
+                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold '><a href="tel:+380636111954">+38(063)611-19-54</a></span>
+                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold'><a href="mailto:lex16mur@gmail.com">lex16mur@gmail.com</a></span>
                         <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={linkedIn} target='blank'>LinkedIn</a></span>
                         <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={gitHub} target='blank'>GitHub</a></span>
                         <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={telegram} target='blank'>Telegram</a></span>

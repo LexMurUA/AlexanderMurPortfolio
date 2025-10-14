@@ -1,10 +1,19 @@
+import { variantsProject } from '../../animations/animations';
 import type { ProjectType } from '../../types/types'
-
+import {  motion } from "framer-motion";
 
 export const Project = ({ image, link, name, techkList,codeLink }: ProjectType) => {
+
   return (
     
-    <div className='flex flex-col lg:flex-row justify-center items-center gap-8 mt-8  lg:mt-20 '>
+    <motion.div
+      variants={variantsProject}
+      initial="initial"
+      whileInView="whileInView"
+      viewport={{ once: true }}
+
+    
+    className='flex flex-col lg:flex-row justify-center items-center gap-8 mt-8  lg:mt-20 '>
       
       <div className='w-[75%] lg:w-1/2 md:w-[50%] lg:w-[35%] overflow-hidden rounded-[15px]  '>
         <a href={link} target='blank'><img src={image} alt="Project" className=' min-w-full
@@ -28,6 +37,6 @@ export const Project = ({ image, link, name, techkList,codeLink }: ProjectType) 
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
