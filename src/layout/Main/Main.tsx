@@ -1,16 +1,18 @@
 import MovieFinder from '../../assets/MovieFinder.png';
-import backWall from '../../assets/backwall.jpg';
+import aP from '../../assets/ap.png';
+import tDl from '../../assets/tDl.png';
+import gW from '../../assets/GW.png';
 import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
-import { movieFinderLink } from '../../constants/constants';
+import { adminPanel, adminPanelCode, gameWorld, gameWorldCode, movieFinderLink, toDoList, toDoListCode } from '../../constants/constants';
+import { movieFinderLinkCode } from '../../constants/constants';
 import './Main.css';
 export const Main = () => {
 
 
     return (
         <main className='my-container  xl: w-[100%] '>
-            <section id='greetings' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'
-            >
+            <section id='greetings' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'>
                 <div className='p-8  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
                     <span>👋</span>
                     <h1 className='text-title text-neutral-50'>HEY, MY NAME IS <br />
@@ -27,7 +29,7 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id='about' className={`flex flex-col border-2 p-8 border-amber-300 `}>
+            <section id='about' className='flex flex-col border-2 p-8 border-amber-300 '>
 
                 <div className='flex flex-col items-center gap-3   lg:gap-8 px-4 py-8 '>
 
@@ -84,14 +86,22 @@ export const Main = () => {
 
                 </div>
             </section>
-
-            <section style={{ backgroundImage: `url(${backWall})` }} className='my-container  bg-center bg-no-repeat bg-contain'>
-                <div>
-                    <h3>PROJECTS</h3>
-                    <Project image={MovieFinder} link={movieFinderLink}
-                        name={'Movie-Finder TypeScript Project'}
-                        techkList={['JavaScript', 'TypeScript',
-                            'React', 'RTK-QUERY', 'REST API', 'SCSS', 'Framer Motion']} />
+{/* //style={{ backgroundImage: `url(${backWall})` }} */}
+            <section  className='flex flex-col border-2 bg-neutral-50'>
+                <div className='p-8'>
+                    <h3 className='text-title text-center'>PROJECTS</h3>
+                    <Project image={MovieFinder} link={movieFinderLink} name='Movie-Finder TypeScript Project'
+                        techkList={['JavaScript', 'TypeScript','React', 'RTK-QUERY', 'REST API', 'SCSS', 'Vite',
+                        'Framer Motion']} codeLink={movieFinderLinkCode} />
+                    <Project image={aP} link={adminPanel} name='Admin Panel MUI Project (Redux Toolkit & Redux Persist)' techkList={[
+                        'JavaScript', 'MUI','React', 'Redux-Toolkit/Persist', 'REST API', 'SCSS', 'Vite'
+                    ]} codeLink={adminPanelCode}/>
+                    <Project image={tDl} link={toDoList} name='To Do List React Project' techkList={[
+                        'JavaScript','React', 'Vite', 'SCSS',
+                    ]} codeLink={toDoListCode}/>
+                    <Project image={gW} link={gameWorld} name='To Do List React Project' techkList={[
+                        'Python', 'OOP', 'JavaScript', 'Django', 'CSS', 'SQLite', 
+                    ]} codeLink={gameWorldCode}/>
                 </div>
             </section>
 

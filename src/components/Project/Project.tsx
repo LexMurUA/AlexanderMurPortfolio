@@ -1,26 +1,31 @@
 import type { ProjectType } from '../../types/types'
-import MovieFinder from '../../assets/MovieFinder.png';
 
-export const Project = ({image,link,name,techkList}:ProjectType) => {
+
+export const Project = ({ image, link, name, techkList,codeLink }: ProjectType) => {
   return (
-    <div>
-    <div>
-      <a href={link} target='blank'><img src={image} alt="Project" /></a>
-    </div>
-
-    <div>
-      <h2>{name}</h2>
-      <ul>
-       {techkList.map((skill,idx)=>(
-        <li key={idx}>{skill}</li>
-       ))}
-      </ul>
-      <div>
-        <h4>See live</h4>
-        <button>Live Link</button>
-        <button>Code Link</button>
+    
+    <div className='flex flex-col items-center gap-8 mt-8 '>
+      <div className='w-[75%] md:w-[50%] lg:w-[35%] overflow-hidden rounded-[15px]  '>
+        <a href={link} target='blank'><img src={image} alt="Project" className=' min-w-full
+          h-auto transition-transform duration-300 ease-in-out hover:scale-110 object-cover rounded-[15px]' /></a>
       </div>
-    </div>
+
+      <div className='flex flex-col items-center text-center gap-4'>
+        <h2 className='text-title text-blue-400'>{name}</h2>
+        <ul className='flex flex-wrap justify-center gap-3 list-disc list-outside pl-3  '>
+          {techkList.map((skill, idx) => (
+            <li className='text-adapt pr-3 text-gray-600 ' key={idx}>{skill}</li>
+          ))}
+        </ul>
+        <div className='flex flex-col gap-2'>
+          <h4 className='text-title'><i>See live</i></h4>
+          <button className='my-btn adapt-touch text-adapt font-bold border-dotted text-gray-600 bg-transparent uppercase'>
+            <a href={codeLink} target='blank'>Code Link</a></button>
+          <button className='my-btn adapt-touch bg-blue-400 text-adapt font-bold uppercase'>
+            <a href={link} target='blank'>Live Link</a>
+          </button>
+        </div>
+      </div>
 
     </div>
   )
