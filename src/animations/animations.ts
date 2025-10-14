@@ -1,4 +1,4 @@
-import { type Variants, motion } from "framer-motion";
+import { type Variants } from "framer-motion";
 
 export const variantsProject: Variants = {
   initial: { opacity: 0, x: -50 },
