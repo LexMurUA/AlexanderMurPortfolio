@@ -2,7 +2,7 @@
 
 
 @utility my-container {
-  @apply w-full ;
+  @apply w-full min-w-[375px] ;
 }
 
 @utility link-nav {

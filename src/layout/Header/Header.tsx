@@ -14,7 +14,7 @@ export const Header = () => {
     return (
         <>
             <div className='h-[33vh] h-[112px] '></div>
-            <header className='my-container  fixed justify-center lg:justify-between bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0'>
+            <header id='header-section' className='my-container  fixed justify-center lg:justify-between bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0'>
 
                 <div className='flex ' >
                     <div className='w-1/2 m-2  flex items-center p-2 gap-2 '>
@@ -31,10 +31,10 @@ export const Header = () => {
                 absolute  lg:static top-[100%] left-0  ${openMenu ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
                  transition-all duration-300  font-medium text-blue-400 text-adapt 
                   lg:w-[45%] lg:items-center lg:opacity-100 lg:translate-x-0`} >
-                    <a href="" className='text-adapt'>Home</a>
+                    <a href="#header-section" className='text-adapt'>Home</a>
                     <a href="#about" className='text-adapt'>About</a>
-                    <a href="" className='text-adapt'>Projects</a>
-                    <a href="" className='text-adapt'>Contacts</a>
+                    <a href="#projects" className='text-adapt'>Projects</a>
+                    <a href="#contacts" className='text-adapt transition-all ease-in-out '>Contacts</a>
                 </nav>
 
 

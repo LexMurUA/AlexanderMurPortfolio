@@ -4,9 +4,11 @@ import tDl from '../../assets/tDl.png';
 import gW from '../../assets/GW.png';
 import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
-import { adminPanel, adminPanelCode, gameWorld, gameWorldCode, movieFinderLink, toDoList, toDoListCode } from '../../constants/constants';
+import { adminPanel, adminPanelCode, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, telegram, toDoList, toDoListCode } from '../../constants/constants';
 import { movieFinderLinkCode } from '../../constants/constants';
 import './Main.css';
+import backWall from '../../assets/backwall.jpg';
+
 export const Main = () => {
 
 
@@ -29,7 +31,7 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id='about' className='flex flex-col border-2 p-8 border-amber-300 '>
+            <section id='about' className='flex flex-col p-8'>
 
                 <div className='flex flex-col items-center gap-3   lg:gap-8 px-4 py-8 '>
 
@@ -86,35 +88,36 @@ export const Main = () => {
 
                 </div>
             </section>
-{/* //style={{ backgroundImage: `url(${backWall})` }} */}
-            <section  className='flex flex-col border-2 bg-neutral-50'>
-                <div className='p-8'>
+
+            <section id='projects' className='flex flex-col bg-neutral-50'>
+                <div className='p-10'>
                     <h3 className='text-title text-center'>PROJECTS</h3>
                     <Project image={MovieFinder} link={movieFinderLink} name='Movie-Finder TypeScript Project'
-                        techkList={['JavaScript', 'TypeScript','React', 'RTK-QUERY', 'REST API', 'SCSS', 'Vite',
-                        'Framer Motion']} codeLink={movieFinderLinkCode} />
+                        techkList={['JavaScript', 'TypeScript', 'React', 'RTK-QUERY', 'REST API', 'SCSS', 'Vite',
+                            'Framer Motion']} codeLink={movieFinderLinkCode} />
                     <Project image={aP} link={adminPanel} name='Admin Panel MUI Project (Redux Toolkit & Redux Persist)' techkList={[
-                        'JavaScript', 'MUI','React', 'Redux-Toolkit/Persist', 'REST API', 'SCSS', 'Vite'
-                    ]} codeLink={adminPanelCode}/>
+                        'JavaScript', 'MUI', 'React', 'Redux-Toolkit/Persist', 'REST API', 'SCSS', 'Vite'
+                    ]} codeLink={adminPanelCode} />
                     <Project image={tDl} link={toDoList} name='To Do List React Project' techkList={[
-                        'JavaScript','React', 'Vite', 'SCSS',
-                    ]} codeLink={toDoListCode}/>
+                        'JavaScript', 'React', 'Vite', 'SCSS',
+                    ]} codeLink={toDoListCode} />
                     <Project image={gW} link={gameWorld} name='To Do List React Project' techkList={[
-                        'Python', 'OOP', 'JavaScript', 'Django', 'CSS', 'SQLite', 
-                    ]} codeLink={gameWorldCode}/>
+                        'Python', 'OOP', 'JavaScript', 'Django', 'CSS', 'SQLite',
+                    ]} codeLink={gameWorldCode} />
                 </div>
             </section>
 
-            <section>
-                <div>
-                    <h3>Contact Details</h3>
-                    <span>Feel free to contact me</span>
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <a href="">sdds</a>
-                        <a href=""></a>
-                        <a href=""></a>
+            <section id='contacts' className='bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'>
+                <div className='p-8 flex flex-col items-center gap-8'>
+                    <h3 className='text-title text-center'>Contact Details</h3>
+                    <span className='text-adapt'><i>Feel free to contact me</i></span>
+                    <div style={{ backgroundImage: `url(${backWall})` }}
+                        className="w-full md:w-[75%] lg:w-1/2 bg-center bg-cover bg-no-repeat  flex flex-row flex-wrap justify-center text-center  ">
+                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold '>+38(063)611-19-54</span>
+                        <span className=' w-1/2 adapt-touch text-adapt p-2 font-semibold'>lex16mur@gmail.com</span>
+                        <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={linkedIn} target='blank'>LinkedIn</a></span>
+                        <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={gitHub} target='blank'>GitHub</a></span>
+                        <span className=' w-1/3 adapt-touch text-adapt p-2 text-blue-500 font-semibold'><a href={telegram} target='blank'>Telegram</a></span>
                     </div>
                 </div>
             </section>
