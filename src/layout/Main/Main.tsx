@@ -1,15 +1,15 @@
-import MovieFinder from '../../assets/MovieFinder.png';
-import aP from '../../assets/ap.png';
-import tDl from '../../assets/tDl.png';
 import gW from '../../assets/GW.png';
-import rs from '../../assets/RS.png';
+import MovieFinder from '../../assets/MovieFinder.png';
 import ps from '../../assets/PS.png';
+import rs from '../../assets/RS.png';
+import aP from '../../assets/ap.png';
+import backBlue from '../../assets/bacgroundblue.jpg';
+import backWall from '../../assets/backwall.jpg';
+import tDl from '../../assets/tDl.png';
 import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
-import { adminPanel, adminPanelCode, diplomaPython, diplomaReact, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, telegram, toDoList, toDoListCode } from '../../constants/constants';
-import { movieFinderLinkCode } from '../../constants/constants';
+import { adminPanel, adminPanelCode, diplomaPython, diplomaReact, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, movieFinderLinkCode, telegram, toDoList, toDoListCode } from '../../constants/constants';
 import './Main.css';
-import backWall from '../../assets/backwall.jpg';
 
 export const Main = () => {
 
@@ -17,7 +17,7 @@ export const Main = () => {
 
     return (
         <main className='my-container  xl: w-[100%] '>
-            <section id='about' className='flex justify-center items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover '>
+            <section style={{ background: `url(${backBlue})` }} id='about' className='flex justify-center p-8 items-center bg-center bg-no-repeat '>
                 <div className='p-8  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
                     <span>👋</span>
                     <h1 className='text-title text-neutral-50'>HEY, MY NAME IS <br />
@@ -115,7 +115,7 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id='contacts' className='bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-no-repeat bg-cover'>
+            <section style={{ background: `url(${backBlue})` }} id='contacts' className='bg-center bg-no-repeat bg-cover'>
                 <div className='p-8 flex flex-col items-center gap-8'>
                     <h3 className='text-title text-center'>Contacts details</h3>
                     <span className='text-adapt'><i>Feel free to contact me</i></span>
