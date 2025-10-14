@@ -17,13 +17,8 @@ export const Main = () => {
 
     return (
         <main className='my-container  xl: w-[100%] '>
-            <section style={{
-                backgroundImage: `url(${backBlue})`,
-                backgroundSize: '100%',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-            }}
- id='about' className='flex justify-center p-8 items-center'>
+            <section 
+                id='about' className='flex justify-center p-8 items-center bg-[url("../../../public/art/bacgroundblue.jpg")] bg-center bg-cover bg-no-repeat'>
                 <div className='p-8  w-full lg:w-[75%] text-adapt flex flex-col items-center text-center gap-4'>
                     <span>👋</span>
                     <h1 className='text-title text-neutral-50'>HEY, MY NAME IS <br />
@@ -123,10 +118,10 @@ export const Main = () => {
 
             <section style={{
                 backgroundImage: `url(${backBlue})`,
-                backgroundSize: '100%',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-            }} id='contacts'>
+            }} id='contacts' className='border-2 border-amber-800'>
                 <div className='p-8 flex flex-col items-center gap-8'>
                     <h3 className='text-title text-center'>Contacts details</h3>
                     <span className='text-adapt'><i>Feel free to contact me</i></span>
