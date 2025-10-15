@@ -35,7 +35,7 @@ export const Main = () => {
                         with HTML5&amp;CSS3, JavaScript, React.js technologies to create effective, user-oriented web applications
                         contributing to the growth of my skills and success of the company.
                     </p>
-                    <button className='adapt-touch text-adapt my-btn'>PROJECTS</button>
+                    <button className='adapt-touch text-adapt my-btn'><a href="#projects">PROJECTS</a></button>
                     <Webs />
                 </div>
             </section>
@@ -97,7 +97,7 @@ export const Main = () => {
                         </div>
                     </div>
 
-                    <button className='adapt-touch text-adapt my-btn self-center mt-4 uppercase bg-blue-400'>Contacts</button>
+                    <button className='adapt-touch text-adapt my-btn self-center mt-4 uppercase bg-blue-400'><a href="#contacts">Contacts</a></button>
 
 
                 </div>
