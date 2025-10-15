@@ -115,7 +115,7 @@ export const Main = () => {
                     <Project image={tDl} link={toDoList} name='To Do List React Project' techkList={[
                         'JavaScript', 'React', 'Vite', 'SCSS',
                     ]} codeLink={toDoListCode} />
-                    <Project image={gW} link={gameWorld} name='To Do List React Project' techkList={[
+                    <Project image={gW} link={gameWorld} name='GAMEWORLD Python Django Project' techkList={[
                         'Python', 'OOP', 'JavaScript', 'Django', 'CSS', 'SQLite',
                     ]} codeLink={gameWorldCode} />
                 </div>
