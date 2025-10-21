@@ -3,12 +3,13 @@ import MovieFinder from '../../assets/MovieFinder.png';
 import ps from '../../assets/PS.png';
 import rs from '../../assets/RS.png';
 import aP from '../../assets/ap.png';
+import wA from '../../assets/weather.png';
 import backBlue from '../../assets/bacgroundblue.jpg';
 import backWall from '../../assets/backwall.jpg';
 import tDl from '../../assets/tDl.png';
 import { Project } from '../../components/Project/Project';
 import { Webs } from '../../components/Webs/Webs';
-import { adminPanel, adminPanelCode, diplomaPython, diplomaReact, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, movieFinderLinkCode, telegram, toDoList, toDoListCode } from '../../constants/constants';
+import { adminPanel, adminPanelCode, diplomaPython, diplomaReact, gameWorld, gameWorldCode, gitHub, linkedIn, movieFinderLink, movieFinderLinkCode, telegram, toDoList, toDoListCode, weatherApi, weatherApiLinkCode } from '../../constants/constants';
 import './Main.css';
 
 export const Main = () => {
@@ -110,10 +111,13 @@ export const Main = () => {
                     <h3 className='text-title text-center'>PROJECTS</h3>
                     <Project image={MovieFinder} link={movieFinderLink} name='Movie-Finder TypeScript Project'
                         techkList={['JavaScript', 'TypeScript', 'React', 'RTK-QUERY', 'REST API', 'SCSS', 'Vite',
-                            'Framer Motion']} codeLink={movieFinderLinkCode} />
+                            'Framer Motion','TMDb API']} codeLink={movieFinderLinkCode} />
                     <Project image={aP} link={adminPanel} name='Admin Panel MUI Project (Redux Toolkit & Redux Persist)' techkList={[
                         'JavaScript', 'MUI', 'React', 'Redux-Toolkit/Persist', 'REST API', 'SCSS', 'Vite'
                     ]} codeLink={adminPanelCode} />
+                    <Project image={wA} link={weatherApi} name='Weather React Api (REST API)' techkList={[
+                        'JavaScript', 'React', 'REST API', 'SCSS', 'Vite', 'localStorage','Weather API'
+                    ]} codeLink={weatherApiLinkCode} />
                     <Project image={tDl} link={toDoList} name='To Do List React Project' techkList={[
                         'JavaScript', 'React', 'Vite', 'SCSS',
                     ]} codeLink={toDoListCode} />

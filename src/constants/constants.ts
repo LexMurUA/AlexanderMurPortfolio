@@ -8,6 +8,9 @@ export const diplomaReact = 'https://testprovider.com/ru/search-certificate/TP73
 export const movieFinderLink = 'https://lexmurua.github.io/Movie-finder/'
 export const movieFinderLinkCode = 'https://github.com/LexMurUA/Movie-finder'
 
+export const weatherApi = 'https://lexmurua.github.io/WeatherReactViteApi/'
+export const weatherApiLinkCode = 'https://github.com/LexMurUA/WeatherReactViteApi'
+
 export const adminPanel = 'https://lexmurua.github.io/Admin-Panel/'
 export const adminPanelCode = 'https://github.com/LexMurUA/Admin-Panel'
 

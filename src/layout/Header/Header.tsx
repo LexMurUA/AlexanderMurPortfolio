@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import burger from '../../assets/burger.svg';
-import me from '../../assets/me.png';
+import me from '../../assets/me1.jpg';
 import burgerOpen from '../../assets/openburg.gif';
 import './Header.css';
 
@@ -14,7 +14,7 @@ export const Header = () => {
     return (
         <>
             <div id='header-section' className='h-[33vh] h-[112px] '></div>
-            <header className='my-container  fixed justify-center lg:justify-between bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0'>
+            <header className='my-container  fixed justify-center lg:justify-between bg-neutral-50 flex flex-col lg:flex-row justify-between px-0  py-0  top-0 left-0 z-[9999]'>
 
                 <div className='flex ' >
                     <div className='w-1/2 m-2  flex items-center p-2 gap-2 '>
