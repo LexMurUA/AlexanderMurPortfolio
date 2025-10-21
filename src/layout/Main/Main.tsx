@@ -56,7 +56,9 @@ export const Main = () => {
                             <p className="text-adapt mt-4">
                                 Hey! I'm <strong>Alexander Murakhin</strong> — a <strong>Junior Frontend Web Developer (React.js)</strong> based in Kyiv, Ukraine.
 
-                                With experience as a manager and technical support assistant for WordPress websites, as well as successful completion of Python and Front-End courses, I’m passionate about building modern, user-friendly web interfaces.
+                                My path into web development started with curiosity, a few small projects during my internship, and countless late-night discussions with ChatGPT.
+                                Since then, I’ve become a Junior Front-End Developer, combining daily work with continued learning — finishing courses in Python and React along the way.
+                                For me, coding is a way to create something meaningful and improve a bit every day.
 
                                 My background has taught me to be <strong>an inventive and adaptable team player with strong communication and problem-solving skills</strong>.
 
@@ -88,7 +90,7 @@ export const Main = () => {
 
                         </div>
                     </div>
-                    <p className="text-adapt mt-4">More than a year of learning under the mentorship of experienced professionals — with detailed code reviews and daily practice — has only strengthened my passion for creating and understanding code in depth. That’s why I’m always full of enthusiasm and eager to take on new challenges in Front-End Development.</p>
+                    <p className="text-adapt mt-4">More than a year of learning and working under the mentorship of experienced professionals — with detailed code reviews and daily practice — has only strengthened my passion for creating and understanding code in depth. That’s why I’m always full of enthusiasm and eager to take on new challenges in Front-End Development.</p>
                     <div className='flex flex-col w-full gap-4'>
                         <h3 className='text-title text-left lg:text-center mt-10  mb-10'><b>Diplomas</b></h3>
                         <div className='flex flex-col w-full md:flex-row gap-4 lg:w-[50%] lg:justify-evenly  lg:w-[100%]'>
