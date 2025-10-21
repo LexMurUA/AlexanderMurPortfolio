@@ -54,13 +54,13 @@ export const Main = () => {
                         <div className='w-full lg:w-1/2'>
                             <h3 className='text-adapt'><b>Get to know me!</b></h3>
                             <p className="text-adapt mt-4">
-                                Hey! I'm <strong>Alexander Murakhin</strong> — a <strong>Junior Frontend Web Developer (React.js)</strong> based in Kyiv, Ukraine.
+                                Hey! I'm <strong>Alexander Murakhin</strong> — a <strong>Junior Frontend Web Developer (React.js)</strong> based in Kyiv, Ukraine. <br />
 
-                                My path into web development started with curiosity, a few small projects during my internship, and countless late-night discussions with ChatGPT.
+                                My path into web development started with curiosity, a few small projects during my internship, and countless late-night discussions with ChatGPT.😁 <br />
                                 Since then, I’ve become a Junior Front-End Developer, combining daily work with continued learning — finishing courses in Python and React along the way.
-                                For me, coding is a way to create something meaningful and improve a bit every day.
+                                For me, coding is a way to create something meaningful and improve a bit every day. <br />
 
-                                My background has taught me to be <strong>an inventive and adaptable team player with strong communication and problem-solving skills</strong>.
+                                My background has taught me to be <strong>an inventive and adaptable team player with strong communication and problem-solving skills</strong>. <br />
 
                                 I’m now seeking a <strong>Junior Frontend (React)</strong> position where I can grow, collaborate with talented professionals, and create <strong>meaningful digital products</strong> for businesses and consumers alike.
 
